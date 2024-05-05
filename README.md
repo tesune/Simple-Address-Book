@@ -1,6 +1,6 @@
 # Simple-Address-Book
 Assessment created with Angular + DevExtreme DataGrid. 
-Begin with [DevExtreme Angular DataGrid ](https://js.devexpress.com/Angular/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) and [Angular Try It!](https://angular.io/start)
+<br>Begin with [DevExtreme Angular DataGrid ](https://js.devexpress.com/Angular/Documentation/Guide/UI_Components/DataGrid/Getting_Started_with_DataGrid/) and [Angular Try It!](https://angular.io/start)
 # Project Flow
 #### Setting up project
 1. Create new project with Angular CLI `ng new simple-address-book --standalone false`
