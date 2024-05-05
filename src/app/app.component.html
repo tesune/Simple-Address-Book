@@ -1,0 +1,54 @@
+
+  <dx-data-grid 
+    id="dataGrid"
+    [dataSource]="contacts"
+    keyExpr="Id"
+    [showBorders]="true"
+    [allowColumnReordering]="true"
+    [allowColumnResizing]="true"
+    [columnAutoWidth]="true">
+    >
+
+    <dxo-selection mode="single"></dxo-selection>
+    <dxo-scrolling mode="virtual"></dxo-scrolling>
+    <dxo-filter-row [visible]="true"></dxo-filter-row>
+    <dxo-search-panel [visible]="true"></dxo-search-panel>
+    <dxo-editing
+          mode="popup"
+          [allowUpdating]="true"
+          [allowDeleting]="true"
+          [allowAdding]="true">
+    </dxo-editing>
+
+    <!-- <dxi-column
+    dataField="Id" 
+    caption="No"
+    [allowEditing]="false"
+    ></dxi-column> -->
+
+    <dxi-column dataField="FullName">
+      <dxi-validation-rule type="required"></dxi-validation-rule>
+    </dxi-column>
+
+    <dxi-column dataField="Email">
+      <dxi-validation-rule 
+      type="email" 
+      message="Invalid email address"
+      ></dxi-validation-rule>
+    </dxi-column>
+
+    <dxi-column dataField="Address">
+      <dxi-validation-rule type="required"></dxi-validation-rule>
+    </dxi-column>
+
+    <dxi-column dataField="PhonoNumber">
+      <dxi-validation-rule type="required"></dxi-validation-rule>
+    </dxi-column>
+
+    <dxi-column type="buttons" [width]="100">
+      <dxi-button icon="edit" name="edit"></dxi-button>
+      <dxi-button icon="trash" name="delete"></dxi-button>
+    </dxi-column>
+
+  </dx-data-grid>
+ 
