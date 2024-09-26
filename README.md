@@ -9,5 +9,4 @@ Assessment created with Angular + DevExtreme DataGrid.
 1. Refer documentation. Create `DataGrid` in **app.component.ts**, Import `module` in `app.module.ts` 
 2. Create **ContactService** with `ng generate service Contact` , add `export interface Employee{}` followed by properties and defined their datatype.
 
-**to be continue...**
 
